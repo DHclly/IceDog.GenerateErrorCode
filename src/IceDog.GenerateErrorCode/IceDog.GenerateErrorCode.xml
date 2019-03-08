@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IceDog.GenerateErrorCode</name>
+    </assembly>
+    <members>
+        <member name="T:IceDog.GenerateErrorCode.Codes.HttpStatusCode">
+            <summary>
+            状态码类，存储状态码常量，这里的常量是http的状态码，用于反射解析
+            </summary>
+        </member>
+        <member name="F:IceDog.GenerateErrorCode.Codes.HttpStatusCode.Continue">
+            <summary>
+            客户端应当继续发送请求。这个临时响应是用来通知客户端它的部分请求已经被服务器接收，且仍未被拒绝。
+            </summary>
+        </member>
+        <member name="F:IceDog.GenerateErrorCode.Codes.HttpStatusCode.Processing">
+            <summary>
+            代表处理将被继续执行。
+            </summary>
+        </member>
+        <member name="F:IceDog.GenerateErrorCode.Codes.HttpStatusCode.Ok">
+            <summary>
+            请求已成功，请求所希望的响应头或数据体将随此响应返回。
+            </summary>
+        </member>
+        <member name="F:IceDog.GenerateErrorCode.Codes.HttpStatusCode.Created">
+            <summary>
+            请求已经被实现，而且有一个新的资源已经依据请求的需要而创建，且其URI已经随Location头信息返回。
+            </summary>
+        </member>
+        <member name="F:IceDog.GenerateErrorCode.Codes.HttpStatusCode.Accepted">
+            <summary>
+            服务器已接受请求，但尚未处理。
+            </summary>
+        </member>
+        <member name="T:IceDog.GenerateErrorCode.Models.HttpStatusCodeModel">
+            <summary>
+            http状态码模型
+            </summary>
+        </member>
+        <member name="P:IceDog.GenerateErrorCode.Models.HttpStatusCodeModel.FullName">
+            <summary>
+            状态码的全名
+            </summary>
+        </member>
+        <member name="P:IceDog.GenerateErrorCode.Models.HttpStatusCodeModel.Name">
+            <summary>
+            状态码的名称
+            </summary>
+        </member>
+        <member name="P:IceDog.GenerateErrorCode.Models.HttpStatusCodeModel.Value">
+            <summary>
+            状态码的值
+            </summary>
+        </member>
+        <member name="P:IceDog.GenerateErrorCode.Models.HttpStatusCodeModel.Note">
+            <summary>
+            状态码的注释
+            </summary>
+        </member>
+        <member name="M:IceDog.GenerateErrorCode.Program.GetXmlDoc(System.String)">
+            <summary>
+            获取xmldoc
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IceDog.GenerateErrorCode.Program.GetNoteDict(System.Xml.XmlDocument)">
+            <summary>
+            获取注释的字典集合
+            </summary>
+            <param name="xml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IceDog.GenerateErrorCode.Program.GetHttpStatusCodeModelList(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            获取解析成功后的模型列表
+            </summary>
+            <param name="noteDict"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IceDog.GenerateErrorCode.Program.GenerateMarkDownDoc(System.Collections.Generic.IList{IceDog.GenerateErrorCode.Models.HttpStatusCodeModel},System.String)">
+            <summary>
+            生成MarkDown文档
+            </summary>
+            <param name="modelList"></param>
+        </member>
+    </members>
+</doc>
