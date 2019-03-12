@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\www\IceDog.GenerateErrorCode\src\IceDog.GenerateErrorCode\IceDog.GenerateErrorCode.xml</DocumentationFile>
+    <DocumentationFile>D:\workspace\IceDog.GenerateErrorCode\src\IceDog.GenerateErrorCode\IceDog.GenerateErrorCode.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
